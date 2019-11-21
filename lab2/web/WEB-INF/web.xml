@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>addPerson</servlet-name>
+        <servlet-class>com.wzbfq.web.servlet.AddPersonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addPerson</servlet-name>
+        <url-pattern>/addPersonServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <servlet-class>com.wzbfq.web.servlet.ListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/listServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>delUser</servlet-name>
+        <servlet-class>com.wzbfq.web.servlet.DelUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delUser</servlet-name>
+        <url-pattern>/delUserServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
