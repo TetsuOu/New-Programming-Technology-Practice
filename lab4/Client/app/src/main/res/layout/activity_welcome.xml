@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context="WelcomeActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        android:background="@drawable/background"
+
+        android:gravity="center">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="30dp"
+
+            android:paddingTop="20dp"
+
+            android:background="#99404348"
+
+            android:gravity="center">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="0dp"
+
+                android:text="Welcome  "
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv2"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:text="username"
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:paddingBottom="20dp"
+
+            android:paddingTop="20dp"
+
+            android:background="#99000000">
+
+            <TextView
+                android:id="@+id/welet1"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="50dp"
+
+                android:layout_marginRight="50dp"
+
+                android:background="@null"
+
+                android:hint="your username"
+
+                android:textColor="@color/smssdk_white"
+
+                android:textColorHint="#9F9FA0" />
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dip"
+
+                android:background="#83738F"
+
+                android:layout_marginRight="40dp"
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="5dp"></View>
+
+
+            <TextView
+                android:id="@+id/welet2"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="50dp"
+
+                android:layout_marginRight="50dp"
+
+                android:background="@null"
+
+                android:hint="your name"
+
+                android:textColor="@color/smssdk_white"
+
+                android:textColorHint="#9F9FA0" />
+
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dip"
+
+                android:background="#83738F"
+
+                android:layout_marginRight="40dp"
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="5dp"></View>
+
+
+            <TextView
+                android:id="@+id/welet3"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="50dp"
+
+                android:layout_marginRight="50dp"
+
+                android:background="@null"
+
+                android:hint="your age"
+
+                android:textColor="@color/smssdk_white"
+
+                android:textColorHint="#9F9FA0" />
+
+
+
+
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dip"
+
+                android:background="#83738F"
+
+                android:layout_marginRight="40dp"
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="5dp"></View>
+
+
+            <TextView
+                android:id="@+id/welet4"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="50dp"
+
+                android:layout_marginRight="50dp"
+
+                android:background="@null"
+
+                android:hint="your telephone"
+
+                android:textColor="@color/smssdk_white"
+
+                android:textColorHint="#9F9FA0" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="30dp"
+
+            android:paddingTop="20dp"
+
+            android:background="#99404348"
+
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button5"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/buttonstyle"
+
+                android:onClick="ViewInfo"
+
+                android:text="View information"/>
+
+            <Button
+                android:id="@+id/button6"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="40dp"
+
+                android:layout_marginLeft="10dp"
+
+                android:background="@drawable/buttonstyle"
+
+                android:layout_weight="1"
+
+                android:text="Home"
+
+                android:onClick="BackToHome"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

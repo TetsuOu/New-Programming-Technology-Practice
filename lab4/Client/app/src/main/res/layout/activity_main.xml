@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        android:background="@drawable/background"
+
+        android:gravity="center">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="30dp"
+
+            android:paddingTop="20dp"
+
+            android:background="#99404348"
+
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv1"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:text="Welcome"
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:paddingBottom="10dp"
+
+            android:paddingTop="20dp"
+
+            android:background="#99000000">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <EditText
+                android:id="@+id/et1"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="64dp"
+
+                android:background="@null"
+
+                android:hint="your username"
+
+                android:maxLines="1"
+
+                android:singleLine="true"
+
+                android:textColor="@color/smssdk_white"
+
+                android:textColorHint="@color/smssdk_gray" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:background="#99000000">
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dip"
+
+                android:background="#83738F"
+
+                android:layout_marginRight="40dp"
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="5dp"></View>
+
+        </LinearLayout>
+
+
+
+        <!-- 密码 -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:background="#99000000"
+
+            android:orientation="horizontal"
+
+            android:paddingTop="10dp"
+
+            android:paddingBottom="20dp">
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lock_outline_black_24dp"/>
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="your password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/smssdk_white"
+                android:textColorHint="@color/smssdk_gray" />
+
+            <ToggleButton
+                android:id="@+id/tb_password_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_visibility_bg"
+                android:layout_marginRight="35dp"
+                android:minWidth="@null"
+                android:minHeight="@null"
+                android:text="@null"
+                android:textOff="@null"
+                android:textOn="@null" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="30dp"
+
+            android:paddingTop="20dp"
+
+            android:background="#99404348"
+
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:text="Forget Password?"
+
+                android:textColor="#DDDDDD"
+
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/forget"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:text="Tap Here"
+
+                android:onClick="Forget"
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/buttonstyle"
+
+                android:onClick="Login"
+
+                android:text="Login"/>
+
+            <Button
+                android:id="@+id/button2"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="40dp"
+
+                android:layout_marginLeft="10dp"
+
+                android:background="@drawable/buttonstyle"
+
+                android:layout_weight="1"
+
+                android:onClick="SignUp"
+
+                android:text="Sign up"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
